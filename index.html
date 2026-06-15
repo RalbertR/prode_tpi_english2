@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prode Mundial 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <button class="nav-logo" id="btn-nav-home">⚽ Prode Mundial 2026</button>
+    <div class="nav-links">
+      <span id="nav-player-badge" class="nav-badge" hidden></span>
+      <button class="nav-link" id="btn-nav-leaderboard">🏆 Leaderboard</button>
+      <button class="nav-link" id="btn-nav-admin">⚙️ Resultados</button>
+    </div>
+  </nav>
+
+  <!-- ===== VISTA: Selector de jugador ===== -->
+  <section id="view-selector" class="view active">
+    <div class="hero">
+      <h1>⚽ Prode Mundial 2026</h1>
+      <p>Seleccioná tu jugador para comenzar</p>
+    </div>
+    <div class="player-buttons">
+      <button class="btn-player" data-player="jugador1">👤 Jugador 1</button>
+      <button class="btn-player" data-player="jugador2">👤 Jugador 2</button>
+    </div>
+    <div class="admin-link">
+      <button id="btn-go-admin" class="btn-secondary">⚙️ Cargar resultados reales</button>
+    </div>
+  </section>
+
+  <!-- ===== VISTA: Predicciones ===== -->
+  <section id="view-predictions" class="view">
+    <header class="view-header">
+      <button id="btn-back-from-predictions" class="btn-back">← Volver</button>
+      <h2 id="predictions-title">Predicciones</h2>
+    </header>
+    <form id="form-predictions">
+      <div id="matches-container"></div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">💾 Guardar predicciones</button>
+        <button type="button" id="btn-go-leaderboard" class="btn-secondary">🏆 Ver leaderboard</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ===== VISTA: Cargar resultados reales ===== -->
+  <section id="view-admin" class="view">
+    <header class="view-header">
+      <button id="btn-back-from-admin" class="btn-back">← Volver</button>
+      <h2>Cargar Resultados Reales</h2>
+    </header>
+    <form id="form-admin">
+      <div id="admin-matches-container"></div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">💾 Guardar resultados</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ===== VISTA: Leaderboard ===== -->
+  <section id="view-leaderboard" class="view">
+    <header class="view-header">
+      <button id="btn-back-from-leaderboard" class="btn-back">← Volver</button>
+      <h2>🏆 Leaderboard</h2>
+    </header>
+    <div id="leaderboard-container"></div>
+    <div class="form-actions">
+      <button id="btn-reset" class="btn-danger">🗑️ Resetear todo</button>
+    </div>
+  </section>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>

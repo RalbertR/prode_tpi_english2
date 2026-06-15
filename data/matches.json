@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "group": "A",
+    "teamA": "🇲🇽 México",
+    "teamB": "🇿🇦 Sudáfrica",
+    "date": "2026-06-11",
+    "realScoreA": 2,
+    "realScoreB": 0
+  },
+  {
+    "id": 2,
+    "group": "A",
+    "teamA": "🇰🇷 Corea del Sur",
+    "teamB": "🇨🇿 Rep. Checa",
+    "date": "2026-06-11",
+    "realScoreA": 2,
+    "realScoreB": 1
+  },
+  {
+    "id": 3,
+    "group": "B",
+    "teamA": "🇨🇦 Canadá",
+    "teamB": "🇧🇦 Bosnia y Herz.",
+    "date": "2026-06-12",
+    "realScoreA": 1,
+    "realScoreB": 1
+  },
+  {
+    "id": 4,
+    "group": "D",
+    "teamA": "🇺🇸 Estados Unidos",
+    "teamB": "🇵🇾 Paraguay",
+    "date": "2026-06-12",
+    "realScoreA": 3,
+    "realScoreB": 1
+  },
+  {
+    "id": 5,
+    "group": "B",
+    "teamA": "🇶🇦 Qatar",
+    "teamB": "🇨🇭 Suiza",
+    "date": "2026-06-13",
+    "realScoreA": 1,
+    "realScoreB": 1
+  },
+  {
+    "id": 6,
+    "group": "C",
+    "teamA": "🇧🇷 Brasil",
+    "teamB": "🇲🇦 Marruecos",
+    "date": "2026-06-13",
+    "realScoreA": 1,
+    "realScoreB": 1
+  },
+  {
+    "id": 7,
+    "group": "C",
+    "teamA": "🇭🇹 Haití",
+    "teamB": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia",
+    "date": "2026-06-13",
+    "realScoreA": 0,
+    "realScoreB": 1
+  },
+  {
+    "id": 8,
+    "group": "D",
+    "teamA": "🇦🇺 Australia",
+    "teamB": "🇹🇷 Turquía",
+    "date": "2026-06-13",
+    "realScoreA": 2,
+    "realScoreB": 0
+  },
+  {
+    "id": 9,
+    "group": "E",
+    "teamA": "🇩🇪 Alemania",
+    "teamB": "🇨🇼 Curazao",
+    "date": "2026-06-14",
+    "realScoreA": 7,
+    "realScoreB": 1
+  },
+  {
+    "id": 10,
+    "group": "F",
+    "teamA": "🇳🇱 Países Bajos",
+    "teamB": "🇯🇵 Japón",
+    "date": "2026-06-14",
+    "realScoreA": 2,
+    "realScoreB": 2
+  },
+  {
+    "id": 11,
+    "group": "E",
+    "teamA": "🇨🇮 Costa de Marfil",
+    "teamB": "🇪🇨 Ecuador",
+    "date": "2026-06-14",
+    "realScoreA": 1,
+    "realScoreB": 0
+  },
+  {
+    "id": 12,
+    "group": "F",
+    "teamA": "🇸🇪 Suecia",
+    "teamB": "🇹🇳 Túnez",
+    "date": "2026-06-14",
+    "realScoreA": 5,
+    "realScoreB": 1
+  },
+  {
+    "id": 13,
+    "group": "H",
+    "teamA": "🇪🇸 España",
+    "teamB": "🇨🇻 Cabo Verde",
+    "date": "2026-06-15",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 14,
+    "group": "H",
+    "teamA": "🇸🇦 Arabia Saudita",
+    "teamB": "🇺🇾 Uruguay",
+    "date": "2026-06-15",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 15,
+    "group": "J",
+    "teamA": "🇦🇷 Argentina",
+    "teamB": "🇩🇿 Argelia",
+    "date": "2026-06-16",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 16,
+    "group": "I",
+    "teamA": "🇫🇷 Francia",
+    "teamB": "🇸🇳 Senegal",
+    "date": "2026-06-16",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 17,
+    "group": "K",
+    "teamA": "🇵🇹 Portugal",
+    "teamB": "🇨🇩 RD de Congo",
+    "date": "2026-06-17",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 18,
+    "group": "L",
+    "teamA": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra",
+    "teamB": "🇭🇷 Croacia",
+    "date": "2026-06-17",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 19,
+    "group": "C",
+    "teamA": "🇧🇷 Brasil",
+    "teamB": "🇭🇹 Haití",
+    "date": "2026-06-19",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 20,
+    "group": "E",
+    "teamA": "🇩🇪 Alemania",
+    "teamB": "🇨🇮 Costa de Marfil",
+    "date": "2026-06-20",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 21,
+    "group": "E",
+    "teamA": "🇪🇨 Ecuador",
+    "teamB": "🇨🇼 Curazao",
+    "date": "2026-06-20",
+    "realScoreA": null,
+    "realScoreB": null
+  },
+  {
+    "id": 22,
+    "group": "H",
+    "teamA": "🇺🇾 Uruguay",
+    "teamB": "🇨🇻 Cabo Verde",
+    "date": "2026-06-21",
+    "realScoreA": null,
+    "realScoreB": null
+  }
+]
