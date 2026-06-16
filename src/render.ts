@@ -120,36 +120,38 @@ export function renderLeaderboard(
       ${sorted
         .map(
           (s, i) => `
-        <div class="leaderboard-card ${i === 0 ? "leader" : ""}">
-          <span class="medal">${medals[i] ?? ""}</span>
-          <span class="player-name">${PLAYER_NAMES[s.player]}</span>
-          <span class="total-score">${s.total} pts</span>
-        </div>
-        <div class="match-detail">
-          ${s.detail
-            .map(
-              (d) => `
-            <div class="detail-row">
-              <span class="detail-match">${d.match.teamA} vs ${d.match.teamB}</span>
-              <span class="detail-pred">
-                ${
-                  d.prediction
-                    ? `Pronóstico: ${d.prediction.predA}-${d.prediction.predB}`
-                    : "Sin pronóstico"
-                }
-              </span>
-              <span class="detail-real">
-                ${
-                  d.match.realScoreA !== null
-                    ? `Real: ${d.match.realScoreA}-${d.match.realScoreB}`
-                    : "Pendiente"
-                }
-              </span>
-              <span class="detail-points points-${d.points}">${d.points} pts</span>
-            </div>
-          `
-            )
-            .join("")}
+        <div class="leaderboard-column">
+          <div class="leaderboard-card ${i === 0 ? "leader" : ""}">
+            <span class="medal">${medals[i] ?? ""}</span>
+            <span class="player-name">${PLAYER_NAMES[s.player]}</span>
+            <span class="total-score">${s.total} pts</span>
+          </div>
+          <div class="match-detail">
+            ${s.detail
+              .map(
+                (d) => `
+              <div class="detail-row">
+                <span class="detail-match">${d.match.teamA} vs ${d.match.teamB}</span>
+                <span class="detail-pred">
+                  ${
+                    d.prediction
+                      ? `Pronóstico: ${d.prediction.predA}-${d.prediction.predB}`
+                      : "Sin pronóstico"
+                  }
+                </span>
+                <span class="detail-real">
+                  ${
+                    d.match.realScoreA !== null
+                      ? `Real: ${d.match.realScoreA}-${d.match.realScoreB}`
+                      : "Pendiente"
+                  }
+                </span>
+                <span class="detail-points points-${d.points}">${d.points} pts</span>
+              </div>
+            `
+              )
+              .join("")}
+          </div>
         </div>
       `
         )
