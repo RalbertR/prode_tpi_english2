@@ -5,6 +5,14 @@ import { PLAYER_NAMES } from "./types.js";
 import { loadPrediction } from "./storage.js";
 import type { PlayerScore } from "./scoring.js";
 
+// Twemoji se carga vía CDN en index.html; convierte los emojis de bandera
+// en imágenes SVG porque Windows no tiene fuente para renderizarlos.
+declare const twemoji: { parse(node: HTMLElement): void } | undefined;
+
+function applyFlagIcons(container: HTMLElement): void {
+  twemoji?.parse(container);
+}
+
 // Genera las tarjetas de predicción para un jugador
 export function renderPredictionForm(
   container: HTMLElement,
@@ -30,7 +38,6 @@ export function renderPredictionForm(
               min="0"
               max="20"
               value="${valA}"
-              required
               placeholder="0"
             />
             <span class="vs">vs</span>
@@ -41,7 +48,6 @@ export function renderPredictionForm(
               min="0"
               max="20"
               value="${valB}"
-              required
               placeholder="0"
             />
             <span class="team">${m.teamB}</span>
@@ -50,6 +56,8 @@ export function renderPredictionForm(
       `;
     })
     .join("");
+
+  applyFlagIcons(container);
 }
 
 // Genera las tarjetas para cargar resultados reales
@@ -93,6 +101,8 @@ export function renderAdminForm(
       `;
     })
     .join("");
+
+  applyFlagIcons(container);
 }
 
 // Genera el HTML del leaderboard
@@ -146,6 +156,8 @@ export function renderLeaderboard(
         .join("")}
     </div>
   `;
+
+  applyFlagIcons(container);
 }
 
 // Formatea "2026-06-20" como "20/06/2026"

@@ -103,7 +103,7 @@ function init(): void {
     allMatches.forEach((match) => {
       const rawA = formData.get(`scoreA_${match.id}`);
       const rawB = formData.get(`scoreB_${match.id}`);
-      if (rawA !== null && rawB !== null) {
+      if (rawA !== null && rawB !== null && rawA !== "" && rawB !== "") {
         savePrediction(currentPlayer, {
           matchId: match.id,
           predA: Number(rawA),

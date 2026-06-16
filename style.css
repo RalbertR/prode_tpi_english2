@@ -245,6 +245,13 @@ body {
   flex-wrap: wrap;
 }
 
+img.emoji {
+  height: 1.1em;
+  width: 1.1em;
+  vertical-align: -0.15em;
+  margin: 0 2px;
+}
+
 .team {
   flex: 1;
   font-weight: 600;

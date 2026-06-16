@@ -1,6 +1,9 @@
 // src/render.ts — genera el HTML dinámico de cada sección
 import { PLAYER_NAMES } from "./types.js";
 import { loadPrediction } from "./storage.js";
+function applyFlagIcons(container) {
+    twemoji?.parse(container);
+}
 // Genera las tarjetas de predicción para un jugador
 export function renderPredictionForm(container, matches, player) {
     container.innerHTML = matches
@@ -21,7 +24,6 @@ export function renderPredictionForm(container, matches, player) {
               min="0"
               max="20"
               value="${valA}"
-              required
               placeholder="0"
             />
             <span class="vs">vs</span>
@@ -32,7 +34,6 @@ export function renderPredictionForm(container, matches, player) {
               min="0"
               max="20"
               value="${valB}"
-              required
               placeholder="0"
             />
             <span class="team">${m.teamB}</span>
@@ -41,6 +42,7 @@ export function renderPredictionForm(container, matches, player) {
       `;
     })
         .join("");
+    applyFlagIcons(container);
 }
 // Genera las tarjetas para cargar resultados reales
 export function renderAdminForm(container, matches) {
@@ -79,6 +81,7 @@ export function renderAdminForm(container, matches) {
       `;
     })
         .join("");
+    applyFlagIcons(container);
 }
 // Genera el HTML del leaderboard
 export function renderLeaderboard(container, scores) {
@@ -118,6 +121,7 @@ export function renderLeaderboard(container, scores) {
         .join("")}
     </div>
   `;
+    applyFlagIcons(container);
 }
 // Formatea "2026-06-20" como "20/06/2026"
 function formatDate(dateStr) {
